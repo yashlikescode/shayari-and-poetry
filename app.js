@@ -81,7 +81,7 @@ function showQuotes(){
     var divElement = document.getElementById("showresult");
 
     // Split the text into an array at each comma
-    var textArray = originalText.split(',');
+    var textArray = originalText.split('-');
 
     // Join the array elements with commas and newline characters
     var modifiedText = textArray.join(',\n');
