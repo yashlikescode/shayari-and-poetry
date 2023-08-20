@@ -73,7 +73,9 @@ function showQuotes(){
             langres.push(i);
     }
     var finalres = intersection(moodres,langres);
-    var originalText = getRandomElementFromArray(finalres);
+    var finalindex = getRandomElementFromArray(finalres);
+    var originalText = colquotes[finalindex];
+    originalText = originalText.toString();
 
     // Get a reference to the div element
     var divElement = document.getElementById("showresult");
