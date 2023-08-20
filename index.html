@@ -18,15 +18,15 @@
 			<div class="col-6" style="text-align: right;">
 				<label>Language:</label>
 				<select id="language">
-					<option value="hindi" selected>Hindi</option>
-					<option value="english">English</option>
+					<option value="Hindi" selected>Hindi</option>
+					<option value="English">English</option>
 				</select>
 			</div>
 			<div class="col-6">
 				<label>Mood:</label>
 				<select id="mood">
-					<option value="sad" selected>Sad</option>
-					<option value="motivational">Motivational</option>
+					<option value="Sad" selected>Sad</option>
+					<option value="Motivational">Motivational</option>
 				</select>
 			</div>
 		</div>
@@ -36,7 +36,7 @@
 				<div class="card" id="squareCard">
 					<div class="card-body">
 						<b>
-						<div class="card-text">
+						<div class="card-text" id = "showresult">
 							This
 							 is asdf asdf asdf asdf the content of
 							  the card below the dropdowns.
@@ -50,7 +50,8 @@
 
 		<div class="row">
 			<div class="col-12" style="text-align: center;">
-				<button id="my-btn" class="btn btn-primary btn-block">Refresh</button>
+				<button id="my-btn" onclick="showQuotes()"
+				class="btn btn-primary btn-block">Refresh</button>
 			</div>
 		</div>
 

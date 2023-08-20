@@ -13,37 +13,80 @@
 const csvFilePath = './shayari.csv';
 
 // Arrays to store the data from the first three columns
-const column1 = [];
-const column2 = [];
-const column3 = [];
+const colmood = [];
+const colang = [];
+const colquotes = [];
 
 // Fetch the CSV file
 fetch(csvFilePath)
-  .then(response => response.text())
-  .then(csvData => {
+    .then(response => response.text())
+    .then(csvData => {
     // Split CSV data into lines
     const lines = csvData.split('\n');
 
     // Iterate through each line (row) of the CSV
     lines.forEach(line => {
-      const columns = line.split(',');
+        const columns = line.split(',');
 
-      // Extract values from the first three columns
-      if (columns.length >= 3) {
-        column1.push(columns[0]);
-        column2.push(columns[1]);
-        column3.push(columns[2]);
-      }
-    });
+        // Extract values from the first three columns
+        if (columns.length >= 3) {
+        colmood.push(columns[0]);
+        colang.push(columns[1]);
+        colquotes.push(columns[2]);
+        }
+});
 
+
+})
+.catch(error => {
+console.error('Error fetching or processing the CSV:', error);
+});
+
+function intersection(arr1, arr2) {
+    return arr1.filter(element => arr2.includes(element));
+}
+function getRandomElementFromArray(array) {
+    const randomIndex = Math.floor(Math.random() * array.length);
+    return array[randomIndex];
+  }
+
+function showQuotes(){
     // Print or use the extracted arrays
-    console.log('Column 1:', column1);
-    console.log('Column 2:', column2);
-    console.log('Column 3:', column3);
-  })
-  .catch(error => {
-    console.error('Error fetching or processing the CSV:', error);
-  });
+    console.log('Column 1:', colmood);
+    console.log('Column 2:', colang);
+    console.log('Column 3:', colquotes);
+
+    const lang = document.getElementById('language').value;
+    const mood = document.getElementById('mood').value;
+    console.log(lang,mood);
+
+    var moodres = []
+    var langres = []
+    for(let i = 0; i < colmood.length; i++)
+    {
+        if(colmood[i] == mood)
+            moodres.push(i);
+    }
+    for(let i = 0; i < colmood.length; i++)
+    {
+        if(colang[i] == lang)
+            langres.push(i);
+    }
+    var finalres = intersection(moodres,langres);
+    var originalText = getRandomElementFromArray(finalres);
+
+    // Get a reference to the div element
+    var divElement = document.getElementById("showresult");
+
+    // Split the text into an array at each comma
+    var textArray = originalText.split(',');
+
+    // Join the array elements with commas and newline characters
+    var modifiedText = textArray.join(',\n');
+
+    // Set the modified text as the content of the div element
+    divElement.innerText = modifiedText;
+}
 
 
    
