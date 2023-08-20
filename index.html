@@ -1,77 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Horizontal Alignment Example</title>
-<style>
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    max-width: 600px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-  }
-  .dropdowns {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  select {
-    padding: 5px;
-    margin: 0 10px;
-  }
-  .card {
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-</style>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+		<title>Bootstrap Example</title>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+	  	
+		<link rel="stylesheet" href="style.css">
+		<script src="app.js"></script>
+	</head>
+	
 <body>
-  <div class="container">
-    <div class="dropdowns">
-      <select>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-      </select>
-      <select>
-        <option value="item1">Item 1</option>
-        <option value="item2">Item 2</option>
-        <option value="item3">Item 3</option>
-      </select>
-    </div>
-    <div class="card">
-      <h2>Card Content</h2>
-      <p>This is the content of the card below the dropdowns.</p>
-    </div>
-    <button>Click Me</button>
-  </div>
+	<div class="containter-fluid outline">
+		<div class="row">
+			<div class="col-6" style="text-align: right;">
+				<label>Language:</label>
+				<select id="language">
+					<option value="hindi" selected>Hindi</option>
+					<option value="english">English</option>
+				</select>
+			</div>
+			<div class="col-6">
+				<label>Mood:</label>
+				<select id="mood">
+					<option value="sad" selected>Sad</option>
+					<option value="motivational">Motivational</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 d-flex justify-content-center align-items-center"> <!-- Adjusted this line -->
+				<div class="card" id="squareCard">
+					<div class="card-body">
+						<b>
+						<div class="card-text">
+							This
+							 is asdf asdf asdf asdf the content of
+							  the card below the dropdowns.
+						</div>
+						</b>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="row">
+			<div class="col-12" style="text-align: center;">
+				<button id="my-btn" class="btn btn-primary btn-block">Refresh</button>
+			</div>
+		</div>
+
+	</div>
+	<script>fetch("./sh.json")
+		.then( function (response) {return response.json})
+		.then(function (obj) {
+		  console.log(obj);
+		})</script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+.outline{
+    margin:10%;
+    padding: 5%;
+    border:solid 1px grey;
+}
+
+.row{
+    margin-bottom: 10px;
+}
+.col{
+    text-align: center;
+}
+.card{
+    width: fit-content;
+    padding:5%;
+}
+.card-body{
+    display:flex;
+    align-items: center;
+    font-size:large;
+}
