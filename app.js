@@ -1,13 +1,20 @@
-    // Calculate and set the height of the card to match its width
-    window.addEventListener('load', function() {
-        const card = document.getElementById('squareCard');
-        const cardWidth = card.clientWidth;
-        const cardHeight = card.clientHeight;
-        if(cardHeight < cardWidth)
-            card.style.height = `${cardWidth}px`;
-        else
-            card.style.width = `${cardHeight}px`;
-    });
+// Calculate and set the height of the card to match its width
+window.addEventListener('load', function() {
+    const card = document.getElementById('squareCard');
+    const cardWidth = card.clientWidth;
+    const cardHeight = card.clientHeight;
+    if(cardHeight < cardWidth)
+        card.style.height = `${cardWidth}px`;
+    else
+        card.style.width = `${cardHeight}px`;
+});
+window.onload = function() {
+    // Find the button element by its ID
+    const button = document.getElementById('my-btn');
+
+    // Simulate a button click
+    button.click();
+};
 
 // Replace 'your-csv-file.csv' with the actual path or URL of your CSV file
 const csvFilePath = './shayari.csv';
