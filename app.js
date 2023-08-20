@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
     const cardWidth = card.clientWidth;
     const cardHeight = card.clientHeight;
     if(cardHeight < cardWidth)
-        card.style.height = `${cardWidth}px`;
+        card.style.height = `${cardWidth*0.9}px`;
     else
         card.style.width = `${cardHeight}px`;
 });
@@ -95,14 +95,6 @@ function showQuotes(){
 
     // Set the modified text as the content of the div element
     divElement.innerText = modifiedText;
-
-    const card = document.getElementById('squareCard');
-    const cardWidth = card.clientWidth;
-    const cardHeight = card.clientHeight;
-    if(cardHeight < cardWidth)
-        card.style.height = `${cardWidth}px`;
-    else
-        card.style.width = `${cardHeight}px`;
 }
 
 
