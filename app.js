@@ -1,6 +1,5 @@
     // Calculate and set the height of the card to match its width
     window.addEventListener('load', function() {
-        console.log("hello")
         const card = document.getElementById('squareCard');
         const cardWidth = card.clientWidth;
         const cardHeight = card.clientHeight;
