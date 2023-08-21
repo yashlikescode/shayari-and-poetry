@@ -95,6 +95,7 @@ function showQuotes(){
 
     modifiedText = modifiedText.replace('*',',');
     modifiedText = modifiedText.replace('@','\n');
+    modifiedText = modifiedText.replace('#','-');
 
     // Set the modified text as the content of the div element
     divElement.innerText = modifiedText;
