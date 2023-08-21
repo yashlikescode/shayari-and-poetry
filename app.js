@@ -93,6 +93,8 @@ function showQuotes(){
     // Join the array elements with commas and newline characters
     var modifiedText = textArray.join(',\n');
 
+    modifiedText = modifiedText.replace('*',',');
+
     // Set the modified text as the content of the div element
     divElement.innerText = modifiedText;
 }
