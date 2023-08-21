@@ -59,9 +59,9 @@ function getRandomElementFromArray(array) {
 
 function showQuotes(){
     // Print or use the extracted arrays
-    console.log('Column 1:', colmood);
-    console.log('Column 2:', colang);
-    console.log('Column 3:', colquotes);
+    console.log('Column 1 Length:', colmood.length);
+    console.log('Column 2 Length:', colang.length);
+    console.log('Column 3 Length:', colquotes.length);
 
     const lang = document.getElementById('language').value;
     const mood = document.getElementById('mood').value;
