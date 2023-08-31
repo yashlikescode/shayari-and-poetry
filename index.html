@@ -34,7 +34,7 @@
 		<div class="row">
 			<div class="col-12 d-flex justify-content-center align-items-center"> <!-- Adjusted this line -->
 				<div class="card" id="squareCard">
-					<div class="card-body">
+					<div class="card-body" id="mastercard">
 						<b>
 						<div class="that-matters">
 						<div class="card-text" id = "showresult">
@@ -47,20 +47,24 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="row">
-			<div class="col-12 d-flex justify-content-center align-items-center"> <!-- Adjusted this line -->
-				<canvas id="myCanvas" width="100%" height="100%"></canvas>
-			</div>
-		</div>
 		
-
 		<div class="row">
 			<div class="col-12" style="text-align: center;">
 				<button id="my-btn" onclick="showQuotes()"
 				class="btn btn-primary btn-block">Refresh</button>
 			</div>
 		</div>
+
+	</div>
+
+	<div class="them">
+		Themes:
+
+			<img class="themes" id="the1" src="pic1.jpeg" onclick="pic1()">
+			<img class="themes" id="the2" src="pic2.jpg" onclick="pic2()">
+			<img class="themes" id="the3"src="pic3.jpeg" onclick="pic3()">
+			<img class="themes" id="the4"src="pic4.jpg" onclick="pic4()">
+			<img class="themes" id="the5"src="pic5.jpg" onclick="pic5()">
 
 	</div>
 

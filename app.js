@@ -1,41 +1,3 @@
-const canvas = document.getElementById("myCanvas");
-        const ctx = canvas.getContext("2d");
-
-        // Draw curved corner rectangle
-        function drawCurvedRectangle(x, y, width, height, radius) {
-            ctx.beginPath();
-            ctx.moveTo(x + radius, y);
-            ctx.lineTo(x + width - radius, y);
-            ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
-            ctx.lineTo(x + width, y + height - radius);
-            ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-            ctx.lineTo(x + radius, y + height);
-            ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
-            ctx.lineTo(x, y + radius);
-            ctx.quadraticCurveTo(x, y, x + radius, y);
-            ctx.closePath();
-            ctx.stroke();
-        }
-
-        // Draw text on the canvas
-        function drawText(text, x, y) {
-            ctx.font = "20px Arial";
-            ctx.textAlign = "center";
-            ctx.textBaseline = "middle";
-            ctx.fillStyle = "black";
-            ctx.fillText(text, x, y);
-        }
-
-        // Calculate the center of the canvas
-        const centerX = canvas.width / 2;
-        const centerY = canvas.height / 2;
-
-        // Draw curved rectangle
-        drawCurvedRectangle(50, 50, 300, 300, 20);
-
-        // Draw text in the middle of the rectangle
-
-
 // Calculate and set the height of the card to match its width
 window.addEventListener('load', function() {
     const card = document.getElementById('squareCard');
@@ -137,7 +99,77 @@ function showQuotes(){
 
     // Set the modified text as the content of the div element
     divElement.innerText = modifiedText;
-    drawText(modifiedText, centerX, centerY);
+}
+
+function pic1(){
+    const p1 = document.getElementById("the1");
+const p2 = document.getElementById("the2");
+const p3 = document.getElementById("the3");
+const p4 = document.getElementById("the4");
+const p5 = document.getElementById("the5");
+const myDiv = document.getElementById('mastercard');
+myDiv.style.backgroundImage = `url(pic1.jpg)`;
+    p1.style.border = '2px solid red';
+    p2.style.border = 'none';
+    p3.style.border = 'none';
+    p4.style.border = 'none';
+    p5.style.border = 'none';
+}
+function pic2(){
+    const p1 = document.getElementById("the1");
+const p2 = document.getElementById("the2");
+const p3 = document.getElementById("the3");
+const p4 = document.getElementById("the4");
+const p5 = document.getElementById("the5");
+const myDiv = document.getElementById('mastercard');
+myDiv.style.backgroundImage = `url(pic2.jpg)`;
+    p2.style.border = '2px solid red';
+    p1.style.border = 'none';
+    p3.style.border = 'none';
+    p4.style.border = 'none';
+    p5.style.border = 'none';
+}
+function pic3(){
+    const p1 = document.getElementById("the1");
+const p2 = document.getElementById("the2");
+const p3 = document.getElementById("the3");
+const p4 = document.getElementById("the4");
+const p5 = document.getElementById("the5");
+const myDiv = document.getElementById('mastercard');
+myDiv.style.backgroundImage = `url(pic3.jpeg)`;
+    p3.style.border = '2px solid red';
+    p2.style.border = 'none';
+    p1.style.border = 'none';
+    p4.style.border = 'none';
+    p5.style.border = 'none';
+}
+function pic4(){
+    const p1 = document.getElementById("the1");
+const p2 = document.getElementById("the2");
+const p3 = document.getElementById("the3");
+const p4 = document.getElementById("the4");
+const p5 = document.getElementById("the5");
+const myDiv = document.getElementById('mastercard');
+myDiv.style.backgroundImage = `url(pic4.jpg)`;
+    p4.style.border = '2px solid red';
+    p2.style.border = 'none';
+    p3.style.border = 'none';
+    p1.style.border = 'none';
+    p5.style.border = 'none';
+}
+function pic5(){
+    const p1 = document.getElementById("the1");
+const p2 = document.getElementById("the2");
+const p3 = document.getElementById("the3");
+const p4 = document.getElementById("the4");
+const p5 = document.getElementById("the5");
+const myDiv = document.getElementById('mastercard');
+myDiv.style.backgroundImage = `url(pic5.jpg)`;
+    p5.style.border = '2px solid red';
+    p2.style.border = 'none';
+    p3.style.border = 'none';
+    p4.style.border = 'none';
+    p1.style.border = 'none';
 }
 
 

@@ -1,3 +1,30 @@
+.themes{
+    width:1cm;
+    height:1cm;
+    margin:0 0.5cm 0.5cm 0.5cm;
+}
+
+.them{
+    display:flex;
+    justify-content:center;
+    transform:translateY(-0.5cm);
+}
+#the1{
+    border:solid 2px red;
+}
+#back-img{
+    position:relative;
+}
+.card-body{
+    display:flex;
+    align-items: center;
+    font-size:large;
+    overflow:hidden;
+    background-image: url('pic1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
 .outline{
     margin: 2% 10% 2% 10%;
     padding: 1% 4% 1% 4%;
@@ -11,18 +38,15 @@
 }
 .card{
     width: fit-content;
-    padding:5%;
+
     border:solid 1px black;
     border-radius:5px;
 }
-.card-body{
-    display:flex;
-    align-items: center;
-    font-size:large;
-}
+
 
 .that-matters{
-    background-color:rgb(0, 0, 0,0.1);
+    background-color:rgba(242, 221, 221, 0.753);
     padding:5px;
     border-radius:5px;
+    margin:5%;
 }
