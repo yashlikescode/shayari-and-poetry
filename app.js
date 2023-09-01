@@ -107,6 +107,7 @@ const p2 = document.getElementById("the2");
 const p3 = document.getElementById("the3");
 const p4 = document.getElementById("the4");
 const p5 = document.getElementById("the5");
+const p6 = document.getElementById("the6");
 const myDiv = document.getElementById('mastercard');
 myDiv.style.backgroundImage = `url(pic1.jpeg)`;
     p1.style.border = '2px solid red';
@@ -114,6 +115,7 @@ myDiv.style.backgroundImage = `url(pic1.jpeg)`;
     p3.style.border = 'none';
     p4.style.border = 'none';
     p5.style.border = 'none';
+    p6.style.border = 'none';
 }
 function pic2(){
     const p1 = document.getElementById("the1");
@@ -121,6 +123,7 @@ const p2 = document.getElementById("the2");
 const p3 = document.getElementById("the3");
 const p4 = document.getElementById("the4");
 const p5 = document.getElementById("the5");
+const p6 = document.getElementById("the6");
 const myDiv = document.getElementById('mastercard');
 myDiv.style.backgroundImage = `url(pic2.jpg)`;
     p2.style.border = '2px solid red';
@@ -128,6 +131,7 @@ myDiv.style.backgroundImage = `url(pic2.jpg)`;
     p3.style.border = 'none';
     p4.style.border = 'none';
     p5.style.border = 'none';
+    p6.style.border = 'none';
 }
 function pic3(){
     const p1 = document.getElementById("the1");
@@ -135,6 +139,7 @@ const p2 = document.getElementById("the2");
 const p3 = document.getElementById("the3");
 const p4 = document.getElementById("the4");
 const p5 = document.getElementById("the5");
+const p6 = document.getElementById("the6");
 const myDiv = document.getElementById('mastercard');
 myDiv.style.backgroundImage = `url(pic3.jpeg)`;
     p3.style.border = '2px solid red';
@@ -142,6 +147,7 @@ myDiv.style.backgroundImage = `url(pic3.jpeg)`;
     p1.style.border = 'none';
     p4.style.border = 'none';
     p5.style.border = 'none';
+    p6.style.border = 'none';
 }
 function pic4(){
     const p1 = document.getElementById("the1");
@@ -149,6 +155,7 @@ const p2 = document.getElementById("the2");
 const p3 = document.getElementById("the3");
 const p4 = document.getElementById("the4");
 const p5 = document.getElementById("the5");
+const p6 = document.getElementById("the6");
 const myDiv = document.getElementById('mastercard');
 myDiv.style.backgroundImage = `url(pic4.jpg)`;
     p4.style.border = '2px solid red';
@@ -156,6 +163,7 @@ myDiv.style.backgroundImage = `url(pic4.jpg)`;
     p3.style.border = 'none';
     p1.style.border = 'none';
     p5.style.border = 'none';
+    p6.style.border = 'none';
 }
 function pic5(){
     const p1 = document.getElementById("the1");
@@ -163,6 +171,7 @@ const p2 = document.getElementById("the2");
 const p3 = document.getElementById("the3");
 const p4 = document.getElementById("the4");
 const p5 = document.getElementById("the5");
+const p6 = document.getElementById("the6");
 const myDiv = document.getElementById('mastercard');
 myDiv.style.backgroundImage = `url(pic5.jpg)`;
     p5.style.border = '2px solid red';
@@ -170,6 +179,24 @@ myDiv.style.backgroundImage = `url(pic5.jpg)`;
     p3.style.border = 'none';
     p4.style.border = 'none';
     p1.style.border = 'none';
+    p6.style.border = 'none';
+}
+
+function blkpic(){
+    const p1 = document.getElementById("the1");
+    const p2 = document.getElementById("the2");
+    const p3 = document.getElementById("the3");
+    const p4 = document.getElementById("the4");
+    const p5 = document.getElementById("the5");
+    const p6 = document.getElementById("the6");
+    const myDiv = document.getElementById('mastercard');
+    myDiv.style.backgroundImage = `url(blank.png)`;
+    p6.style.border = '2px solid red';
+    p2.style.border = 'none';
+    p3.style.border = 'none';
+    p4.style.border = 'none';
+    p1.style.border = 'none';
+    p5.style.border = 'none';
 }
 
 

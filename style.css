@@ -1,13 +1,12 @@
 .themes{
     width:1cm;
     height:1cm;
-    margin:0 0.5cm 0.5cm 0.5cm;
+    margin:0 0.2cm 0.2cm 0.2cm;
 }
 
 .them{
     display:flex;
     justify-content:center;
-    transform:translateY(-0.5cm);
 }
 #the1{
     border:solid 2px red;
